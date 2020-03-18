@@ -9,10 +9,13 @@ import (
 	"./heap4l"
 	"./list4l"
 	"./math4l"
+	"./minCountByRating"
 	"./sort4l"
 	"./stack4l"
+	"./strconv4l"
 	"./string4l"
 	"./unicode4l"
+	"./unioncheckingset"
 )
 
 func testPacString() {
@@ -47,13 +50,26 @@ func testStackFunc() {
 	stack4l.StackFunc()
 }
 
+func testStrconvFunc() {
+	strconv4l.StrconvFunc()
+}
+
+func testMinCountByRating() {
+	minCountByRating.MinCountByRating()
+}
+
+func testUnionCheckingSet() {
+	unioncheckingset.UnionCheckingSet()
+}
+
 func main() {
 	//testPacString()
 	//testPacUnicode()
-	testPacSort()
+	//testPacSort()
 	//testBigMathFunc()
 	//testHeapFunc()
 	//testListFunc()
 	//testMathFunc()
 	//testStackFunc()
+	testStrconvFunc()
 }

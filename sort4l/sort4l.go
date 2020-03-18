@@ -80,4 +80,24 @@ func Sort4lFunc() {
 	fmt.Println(arr)
 	arr = arr[4:5:5]
 	fmt.Println(arr, cap(arr), len(arr))
+
+	arrs := []struct{
+		name string
+		age int
+	} {
+		{"ss", 1},
+		{"ss", 2},
+		{"ss", 6},
+		{"ss", 7},
+		{"ss", 8},
+		{"ss", 17},
+		{"ss", 18},
+		{"ss", 19},
+
+	}
+	pos := sort.Search(len(arrs), func(i int) bool {
+		return arrs[i].age>= 4
+	})
+	fmt.Println(pos)
+
 }
