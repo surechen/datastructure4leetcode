@@ -37,7 +37,7 @@ func reverse(arr []int) {
 	if len(arr) == 0 {
 		return
 	}
-	for begin, end := 0, len(arr)-1; begin != end; begin, end = begin+1, end-1 {
+	for begin, end := 0, len(arr)-1; begin < end; begin, end = begin+1, end-1 {
 		arr[begin], arr[end] = arr[end], arr[begin]
 	}
 	return
