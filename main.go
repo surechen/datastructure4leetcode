@@ -5,17 +5,17 @@
 package main
 
 import (
+	"./algorithm/minCountByRating"
+	"./algorithm/unioncheckingset"
 	"./bigmath4l"
 	"./heap4l"
 	"./list4l"
 	"./math4l"
-	"./minCountByRating"
 	"./sort4l"
 	"./stack4l"
 	"./strconv4l"
 	"./string4l"
 	"./unicode4l"
-	"./unioncheckingset"
 )
 
 func testPacString() {
@@ -71,5 +71,6 @@ func main() {
 	//testListFunc()
 	//testMathFunc()
 	//testStackFunc()
-	testStrconvFunc()
+	//testStrconvFunc()
+	testUnionCheckingSet()
 }
