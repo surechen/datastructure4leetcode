@@ -5,17 +5,18 @@
 package main
 
 import (
-	"./algorithm/minCountByRating"
-	"./algorithm/unioncheckingset"
-	"./bigmath4l"
-	"./heap4l"
-	"./list4l"
-	"./math4l"
-	"./sort4l"
-	"./stack4l"
-	"./strconv4l"
-	"./string4l"
-	"./unicode4l"
+	"datastructure4leetcode/algorithm/minCountByRating"
+	"datastructure4leetcode/algorithm/unioncheckingset"
+	"datastructure4leetcode/bigmath4l"
+	"datastructure4leetcode/heap4l"
+	"datastructure4leetcode/list4l"
+	"datastructure4leetcode/math4l"
+	"datastructure4leetcode/sort4l"
+	"datastructure4leetcode/stack4l"
+	"datastructure4leetcode/strconv4l"
+	"datastructure4leetcode/string4l"
+	"datastructure4leetcode/sync4l"
+	"datastructure4leetcode/unicode4l"
 )
 
 func testPacString() {
@@ -62,6 +63,10 @@ func testUnionCheckingSet() {
 	unioncheckingset.UnionCheckingSet()
 }
 
+func testSyncFunc() {
+	sync4l.MutexFuncErr()
+}
+
 func main() {
 	//testPacString()
 	//testPacUnicode()
@@ -72,5 +77,6 @@ func main() {
 	//testMathFunc()
 	//testStackFunc()
 	//testStrconvFunc()
-	testUnionCheckingSet()
+	//testUnionCheckingSet()
+	testSyncFunc()
 }
